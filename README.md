@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://tmkoc-perfect-episodes.cyclic.app/random-episode" target="_blank">
-    <button>Get Hilarious Episode</button>
+    <button style="display: inline-block; padding: 10px 20px; background-color: #a2cee4; color: #2e3180; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: 600;">Get Hilarious Episode</button>
 </a>
 </p>
 
