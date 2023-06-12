@@ -39,4 +39,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 If you have any questions or need further assistance, please feel free to reach out to me at [arthbvhanesa2853@gmail.com](mailto:arthbvhanesa2853@gmail.com).
 
-I hope the TMKOC Episode Randomizer brings a smile to your face and adds more laughter to your day! Enjoy the hilarious episodes and savor the taste of good food alongside them.
+I hope the TMKOC Episode Randomizer brings a smile to your face and adds more laughter to your day! Enjoy the hilarious episodes and savor the taste of good food alongside.
