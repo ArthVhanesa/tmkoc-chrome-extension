@@ -1,6 +1,7 @@
 (() => {
   let episodeTitle = "Taarak Mehta Ka Ooltah Chashmah";
-  let channelName = "Sony SAB";
+  let channelName1 = "Sony SAB";
+  let channelName2 = "Sony PAL";
   let episodeTitleElement;
   let channelNameElement;
   let ytSubscribeElement;
@@ -31,7 +32,7 @@
           } else {
             // console.log("video ID not found");
             isEpisodeAvailableVariable = false;
-            reject();
+            resolve();
           }
         }
       });
@@ -55,7 +56,8 @@
         episodeTitleElement &&
         episodeTitleElement.textContent.includes(episodeTitle) &&
         channelNameElement &&
-        channelNameElement.textContent.includes(channelName)
+        (channelNameElement.textContent.includes(channelName1) ||
+          channelNameElement.textContent.includes(channelName2))
       ) {
         const submitEpisodeButtonExist =
           document.getElementsByClassName("episode-submit-btn")[0];
@@ -73,16 +75,18 @@
           submitEpisodeButton.style.fontWeight = "600";
           submitEpisodeButton.style.cursor = "pointer";
 
-          if (isEpisodeAvailableVariable) {
-            submitEpisodeButton.textContent = "✅ Added";
-            submitEpisodeButton.style.backgroundColor = "#494945";
-            submitEpisodeButton.style.color = "#f1f1f1";
-            submitEpisodeButton.disabled = true;
-          } else {
-            submitEpisodeButton.textContent = "Add Episode";
-            submitEpisodeButton.style.backgroundColor = "white";
-            submitEpisodeButton.style.color = "black";
-          }
+          isEpisodeAvailable(currentVideoId).then(() => {
+            if (isEpisodeAvailableVariable) {
+              submitEpisodeButton.textContent = "✅ Added";
+              submitEpisodeButton.style.backgroundColor = "#494945";
+              submitEpisodeButton.style.color = "#f1f1f1";
+              submitEpisodeButton.disabled = true;
+            } else {
+              submitEpisodeButton.textContent = "Add Episode";
+              submitEpisodeButton.style.backgroundColor = "white";
+              submitEpisodeButton.style.color = "black";
+            }
+          });
 
           submitEpisodeButton.addEventListener("click", onSubmitHandler);
 
@@ -172,7 +176,10 @@
 
     if (type === "NEW") {
       currentVideoId = videoId;
-      newVideoLoaded();
+      isEpisodeAvailable(currentVideoId).then(() => {
+        setTimeout(newVideoLoaded, 500);
+      });
+      // newVideoLoaded();
     }
   });
 
