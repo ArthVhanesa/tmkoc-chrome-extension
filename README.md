@@ -1,6 +1,6 @@
 # TMKOC Episode Randomizer
 
-![TMKOC Episode Randomizer](https://github.com/ArthVhanesa/tmkoc-episode-randomizer/assets/77712031/14a27278-eb50-4a0b-8fe2-96a4244950f9)
+![TMKOC Episode Randomizer](https://github.com/ArthVhanesa/tmkoc-chrome-extension/assets/77712031/a5820549-6634-4237-b079-6fa77582eea1)
 
 ## Description
 
