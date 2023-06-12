@@ -1,6 +1,9 @@
 # TMKOC Episode Randomizer
 
-![TMKOC Episode Randomizer](https://github.com/ArthVhanesa/tmkoc-chrome-extension/assets/77712031/a5820549-6634-4237-b079-6fa77582eea1)
+<p align="center">
+<img align=center height=150px src="https://github.com/ArthVhanesa/tmkoc-chrome-extension/assets/77712031/a5820549-6634-4237-b079-6fa77582eea1"/>
+</p>
+<h2 align="center">TMKOC Episode Randomizer - Chrome Extension</h2>
 
 ## Description
 
