@@ -5,6 +5,12 @@
 </p>
 <h2 align="center">TMKOC Episode Randomizer - Chrome Extension</h2>
 
+<p align="center">
+<a href="https://tmkoc-perfect-episodes.cyclic.app/random-episode" target="_blank">
+    <button>Get Hilarious Episode</button>
+</a>
+</p>
+
 ## Description
 
 The TMKOC Episode Randomizer is a Chrome extension that adds a touch of laughter to your day by providing a random hilarious episode from the popular sitcom "Taarak Mehta Ka Ooltah Chashmah." Whenever you watch an episode of Taarak Mehta Ka Ooltah Chashmah on the Sony SAB channel, this extension allows you to easily add the episode collection and enjoy it later.
